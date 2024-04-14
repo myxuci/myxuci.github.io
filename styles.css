@@ -1,86 +1,157 @@
-/* Reset Styles */
-* {
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
+  }
+  
+  /* Basic styling */
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Navigation Styles */
-nav ul {
-    list-style: none;
-    background: #333;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background: #555;
-}
-
-/* Section Styles */
-.section {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.section h2 {
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 18px;
-    color: #666;
-}
-
-/* Portfolio Styles */
-.portfolio-item {
-    margin-bottom: 40px;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item h3 {
-    margin-top: 10px;
-}
-
-/* Footer Styles */
-footer {
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
     background: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-}
+    z-index: 999; /* Ensure it's always on top */
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Fullscreen background video */
+  .fullscreen-bg {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .fullscreen-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity of the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreen-bg h2 {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .small-text {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive; /* Italian style font */
+  }
+  
+  .big-text {
+    font-size: 48px;
+  }
+  
+  /* Highlight current section link */
+  .active-link {
+    font-weight: bold;
+  }
+  
+  /* Portfolio styling */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .portfolio-item {
+    width: calc(50% - 15px); /* Two columns with some space in between */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .portfolio-item .image {
+    width: 40%; /* Image takes up 40% of the width */
+    margin-right: 20px; /* Add some spacing between image and details */
+  }
+  
+  .portfolio-item .image img {
+    max-width: 100%;
+  }
+  
+  .portfolio-item .details {
+    width: 60%; /* Details take up 60% of the width */
+  }
+  
+  .portfolio-item h3 {
+    margin-bottom: 5px;
+  }
+  
+  .portfolio-item .location,
+  .portfolio-item .time-span,
+  .portfolio-item .job-title {
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item .time-span .highlight {
+    font-size: 18px; /* Different font size for time span */
+    font-weight: bold;
+  }
+  
+  /* Responsive layout adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .portfolio-item {
+      width: 100%; /* Make it full width on smaller screens */
+    }
+  }
+  

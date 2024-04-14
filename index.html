@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-Pyd+A/3/QfmjWUBIfBcvzRFYvl3XuAj6yjqaH3eW/gGDVhV8N3UAGtVPNVjG2rDf" crossorigin="anonymous">
+
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Welcome to my personal website! I'm [Your Name], a [Your Profession/Title] based in [Your Location]. [Brief description about yourself and your expertise].</p>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="portfolio-item1.jpg" alt="Portfolio Item 1">
-            <h3>Portfolio Item 1</h3>
-            <p>Description of Portfolio Item 1</p>
+    <section id="home" class="fullscreen-bg">
+        <div class="overlay">
+            <div class="container">
+                <h2><span class="small-text">Hey, I'm</span><br><span class="big-text">DAVID LI</span></h2>
+            </div>
         </div>
-        <div class="portfolio-item">
-            <img src="portfolio-item2.jpg" alt="Portfolio Item 2">
-            <h3>Portfolio Item 2</h3>
-            <p>Description of Portfolio Item 2</p>
+        <video autoplay muted loop class="fullscreen-bg__video">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="assets/logo_Google_FullColor_3x_830x271px.original.png" alt="Portfolio Item">
+                    </div>
+                    <div class="details">
+                        <h3>Google</h3>
+                        <p class="job-title">Software Engineer</p>
+                        <p class="location">Sunnyvale, California</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="assets/The_University_of_California_Irvine.svg" alt="Portfolio Item">
+                    </div>
+                    <div class="details">
+                        <h3>University of California, Irvine</h3>
+                        <p class="job-title">PhD in Engineering</p>
+                        <p class="location">Irvine, California</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Add more portfolio items as needed -->
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email at [Your Email Address] or connect with me on [Social Media Platforms].</p>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>Explore further details on my <a href="">LinkedIn profile</a>.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
